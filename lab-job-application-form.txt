@@ -1,0 +1,138 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post">
+            <!-- Name Input -->
+            <input type="text" id="name" placeholder="Full Name" required>
+
+            <!-- Email Input -->
+            <input type="email" id="email" placeholder="Email Address" required>
+
+            <!-- Position Select -->
+            <select id="position" required>
+                <option value="" disabled selected>Select Position</option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="manager">Manager</option>
+            </select>
+
+            <!-- Availability Radio Group -->
+            <fieldset class="radio-group" required>
+                <legend>Availability</legend>
+                <input type="radio" id="full-time" name="availability" value="full-time">
+                <label for="full-time">Full-Time</label>
+                <input type="radio" id="part-time" name="availability" value="part-time">
+                <label for="part-time">Part-Time</label>
+            </fieldset>
+
+            <!-- Message Textarea -->
+            <textarea id="message" placeholder="Write a message" required></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* 10. Focus Styling — input & textarea only, in that order */
+input:focus, textarea:focus {
+    border-color: #5c9eeb;
+}
+
+/* 11. Invalid Styling — must be input, select, textarea in that order */
+input:invalid, select:invalid, textarea:invalid {
+    border-color: red;
+}
+
+/* 12. Valid Styling — must be input, select, textarea in that order */
+input:valid, select:valid, textarea:valid {
+    border-color: green;
+}
+
+/* 13. Button Hover Styling — must be only button:hover */
+button:hover {
+    background-color: #5c9eeb;
+    color: white;
+}
+
+/* 16. First input only */
+input:first-of-type {
+    border-radius: 10px 10px 0 0;
+}
+
+/* General Element Styles */
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Radio Styles */
+.radio-group input[type="radio"]:checked {
+    border-color: #5c9eeb;
+    background-color: #5c9eeb;
+    box-shadow: 0 0 5px rgba(92, 158, 235, 0.6);
+}
+
+.radio-group input[type="radio"]:checked + label {
+    color: #5c9eeb;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+}
+
+/* Button */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+** end of undefined **
+
